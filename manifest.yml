@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: http-node
+  host: http-node
+  disk_quota: 1024M
+  services:
+  - http-node-cloudantNoSQLDB
+  - http-node-iotf-service
